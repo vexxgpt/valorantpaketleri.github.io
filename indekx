@@ -1,0 +1,287 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tanıtım Sitesi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 1),
+                         0 0 20px rgba(0, 255, 0, 1),
+                         0 0 40px rgba(0, 255, 0, 1),
+                         0 0 80px rgba(0, 255, 0, 1);
+        }
+        #videos {
+            padding: 40px 0;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .video-item {
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .video-item-content {
+            padding: 20px;
+        }
+        .video-item-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 1),
+                         0 0 20px rgba(0, 255, 0, 1),
+                         0 0 40px rgba(0, 255, 0, 1),
+                         0 0 80px rgba(0, 255, 0, 1);
+        }
+        .video-item-description {
+            font-size: 18px;
+            color: #ccc;
+        }
+        .video-item-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .video-button {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .video-button:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+        footer {
+            background-color: #000;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .notification-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; /* Sağ kenara yaslanma */
+            background-color: #f44336; /* Kırmızı */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.6s;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 1),
+                         0 0 20px rgba(0, 255, 0, 1),
+                         0 0 30px rgba(0, 255, 0, 1),
+                         0 0 40px rgba(0, 255, 0, 1);
+        }
+
+        .notification-box.show {
+            opacity: 0.9;
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VALORANT PAKETLER</h1>
+        </div>
+    </header>
+
+    <section id="videos">
+        <div class="container">
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-item">
+                    <iframe src="https://streamable.com/e/uurxby?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">VALORANT HİLE</h2>
+                        <p class="video-item-description">Valorant Otomatik Kafa Kitlenme (Aimbot) Duvar İzleme(wall hack) ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <iframe src="https://streamable.com/e/qompmb
+?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">VALORANT POİNT GENERATOR (VP)</h2>
+                        <p class="video-item-description">Valorant VP Generator | Türkiye'de ilk | Sınırsız Stok kodlar | Kanıtlı | ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <img src="https://i.hizliresim.com/gvesass.jpg" alt="">
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">VALORANT BAN KALDIRMA (%100)</h2>
+                        <p class="video-item-description">Valorant Ban Kaldırma Van 152- Van 5 - Van 51 - Tüm Hataları Kaldırır "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <iframe src="https://streamable.com/e/u0ir76?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">VALORANT GÖRÜNÜM DEİŞTİRİCİ</h2>
+                        <p class="video-item-description">Valorant Görünüm Değiştirici | Random Hesap Almaya Son | 700+ Tüm Modeller açık
+
+
+
+
+
+
+ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <iframe src="https://streamable.com/e/w7t5vt?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">ROGUE COMPANY</h2>
+                        <p class="video-item-description">Rogue Company: WALL HACK
+(DUVAR İZLEME)
++ AİMBOT
+ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <iframe src="https://streamable.com/e/yjsrvd
+?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">BLOODHUNT</h2>
+                        <p class="video-item-description">BLOODHUNT: WALL HACK (DUVAR İZLEME)
++ AİMBOT
+
+
+
+
+
+
+ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div><div class="video-item">
+                    <iframe src="https://streamable.com/e/hv68zf
+?autoplay=1&amp;nocontrols=1" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="video-item-content">
+                        <h2 class="video-item-title">ZULA ALTIN GENERATOR</h2>
+                        <p class="video-item-description">Zula Altın Generator
+(Türkiye'de İlk)
+
+
+
+
+
+
+ve Daha Fazlası İçin "Fiyat Bilgisi Al" Basınız</p>
+                        <div class="video-item-buttons">
+                            <button class="video-button">Fiyat Bilgisi Al</button>
+                            <button class="video-button">Tam Ekran İzle</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <!-- Diğer videolar buraya eklenebilir -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Video Tanıtım Sitesi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <div id="notification" class="notification-box" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Bir müşteri Zula VP generator paketi sipariş verdi. Sipariş Numarası: 9172 - 2 saat önce</div>
+
+ <script>
+    function generateOrderNumber() {
+        return Math.floor(Math.random() * 10000);
+    }
+
+    function clearNotification() {
+        var notification = document.getElementById('notification');
+        notification.classList.remove('show');
+    }
+
+    // İlk bildirimi gösterme
+    function showFirstNotification() {
+        var notification = document.getElementById('notification');
+        var orderNumber = generateOrderNumber();
+        var orders = [
+            "Değerli bir müşteri Valorant hile paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 5 dakika önce",
+            "Bir müşteri Valorant ban kaldırma paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 2 dakika önce",
+            "Bir müşteri Valorant VP generator paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 3 dakika önce",
+            "Bir müşteri Zula VP generator paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 2 saat önce",
+            "Bir müşteri Futbol iddia yazılımı sipariş verdi. Sipariş Numarası: " + orderNumber + " - 1 saat önce"
+        ];
+        var randomOrder = orders[Math.floor(Math.random() * orders.length)];
+        notification.innerHTML = randomOrder;
+        notification.style.backgroundColor = '#000000'; // Mavi arkaplan rengi
+        notification.style.color = '#fff'; // Beyaz yazı rengi
+        notification.classList.add('show');
+        setTimeout(function() {
+            notification.classList.remove('show');
+        }, 60000); // 2 saniye sonra bildirimi kaldır
+    }
+
+    // Sayfa yüklendiğinde ilk bildirimi göster
+    window.onload = function() {
+        showFirstNotification();
+        // 5 saniyede bir yeniden başlat
+        setInterval(showFirstNotification, 5000);
+    };
+</script>
+
+
+
+</body></html>
