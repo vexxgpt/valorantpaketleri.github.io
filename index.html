@@ -656,46 +656,9 @@ display: none !important;
             <p>© 2024 Video Tanıtım Sitesi. Tüm hakları saklıdır.</p>
         </div>
     </footer>
-    <div id="notification" class="notification-box" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Bir müşteri Valorant ban kaldırma paketi sipariş verdi. Sipariş Numarası: 5780 - 2 dakika önce</div>
+  
 
-    <script>
-    function generateOrderNumber() {
-        return Math.floor(Math.random() * 10000);
-    }
-
-    function clearNotification() {
-        var notification = document.getElementById('notification');
-        notification.classList.remove('show');
-    }
-
-    // İlk bildirimi gösterme
-    function showFirstNotification() {
-        var notification = document.getElementById('notification');
-        var orderNumber = generateOrderNumber();
-        var orders = [
-            "Değerli bir müşteri Valorant hile paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 5 dakika önce",
-            "Bir müşteri Valorant ban kaldırma paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 2 dakika önce",
-            "Bir müşteri Valorant VP generator paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 3 dakika önce",
-            "Bir müşteri Zula VP generator paketi sipariş verdi. Sipariş Numarası: " + orderNumber + " - 2 saat önce",
-            "Bir müşteri Futbol iddia yazılımı sipariş verdi. Sipariş Numarası: " + orderNumber + " - 1 saat önce"
-        ];
-        var randomOrder = orders[Math.floor(Math.random() * orders.length)];
-        notification.innerHTML = randomOrder;
-        notification.style.backgroundColor = '#000000'; // Mavi arkaplan rengi
-        notification.style.color = '#fff'; // Beyaz yazı rengi
-        notification.classList.add('show');
-        setTimeout(function() {
-            notification.classList.remove('show');
-        }, 60000); // 2 saniye sonra bildirimi kaldır
-    }
-
-    // Sayfa yüklendiğinde ilk bildirimi göster
-    window.onload = function() {
-        showFirstNotification();
-        // 5 saniyede bir yeniden başlat
-        setInterval(showFirstNotification, 5000);
-    };
-</script>
+    
 <!-- Default Statcounter code for br https://ezglobalyazillim.com/ -->
 <script type="text/javascript">
 var sc_project=12994444; 
