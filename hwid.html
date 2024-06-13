@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWID Doğrulama</title>
+</head>
+<body>
+    <h1>HWID Doğrulama</h1>
+    <label for="encryptedHwid">Şifrelenmiş HWID:</label><br>
+    <input type="text" id="encryptedHwid" name="encryptedHwid" style="width: 300px;"><br><br>
+    <button onclick="validateHWID()">HWID'i Doğrula</button><br><br>
+    <p id="validationResult"></p>
+
+    <script>
+        async function validateHWID() {
+            let encryptedHwid = document.getElementById("encryptedHwid").value.trim();
+            let url = "https://valorantpaketleri.github.io/hwid"; // Bu URL doğrulama servisinizin URL'si olmalıdır
+
+            try {
+                let response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ hwid: encryptedHwid })
+                });
+
+                if (response.ok) {
+                    let responseData = await response.json();
+                    if (responseData.status === "valid") {
+                        document.getElementById("validationResult").innerText = "HWID doğrulandı!";
+                    } else {
+                        document.getElementById("validationResult").innerText = "HWID geçersiz!";
+                    }
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+                document.getElementById("validationResult").innerText = "Bir hata oluştu: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
